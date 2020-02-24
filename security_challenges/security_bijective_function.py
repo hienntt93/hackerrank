@@ -1,10 +1,12 @@
 # Enter your code here. Read input from STDIN. Print output to STDOUT
-
+def bijective(n,f):
+    for i in range(0,n):
+        for j in range(0,i):
+            if(j+1) in f:
+                continue
+            else: return ("NO")
+    return "YES"
 n = int(raw_input())
-fx = []
-f = raw_input()  
-fx = list(map(int,f.split(' '))) 
+f = list(map(int,raw_input().split())) 
 
-if len(fx) == n:
-    print ("YES")
-else: print("NO") 
+print(bijective(n,f))
