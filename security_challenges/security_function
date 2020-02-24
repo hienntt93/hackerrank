@@ -8,7 +8,7 @@ import sys
 
 # Complete the calculate function below.
 def calculate(x):
-    return x%x
+    return x%11
 
 if __name__ == '__main__':
     fptr = open(os.environ['OUTPUT_PATH'], 'w')
